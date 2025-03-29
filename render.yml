@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: heyowl-worker
+    env: docker
+    dockerfilePath: ./Dockerfile
+    plan: free  # Change to 'starter' or 'standard' if needed
+    envVars:
+      - key: PORT
+        value: 10000  # Adjust based on your application requirements
